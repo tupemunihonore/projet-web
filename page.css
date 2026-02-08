@@ -1,0 +1,104 @@
+/* Configuration Générale */
+:root {
+    --bg-dark: #0a0e14;
+    --card-bg: #161b22;
+    --primary-blue: #007bff;
+    --text-main: #e6edf3;
+    --text-muted: #8b949e;
+}
+
+body {
+    background: linear-gradient(135deg, #05070a 0%, #0a1120 100%);
+    color: var(--text-main);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+/* Effet de Verre (Glassmorphism) */
+.glass-card {
+    background: rgba(22, 27, 34, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 25px;
+    height: 100%;
+}
+
+/* Style de l'Avatar */
+.profile-avatar-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-blue);
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Éléments internes */
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item label {
+    display: block;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-item p {
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.inner-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-blue);
+}
+
+.inner-card small {
+    color: var(--text-muted);
+}
+
+/* Statuts et Badges */
+.status-pill {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.status-pill.success {
+    background: rgba(45, 164, 78, 0.2);
+    color: #3fb950;
+}
+
+.status-pill.pending {
+    background: rgba(210, 153, 34, 0.2);
+    color: #d29922;
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--primary-blue);
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Personnalisation Table */
+.table {
+    color: var(--text-main);
+}
