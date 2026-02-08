@@ -1,0 +1,100 @@
+/* Style général du corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Un beau dégradé bleu profond pour le fond */
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+}
+
+/* Le conteneur du formulaire (ton cadre "Connexion") */
+fieldset {
+    border: 2px solid #ef4444; /* Bordure rouge élégante */
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.05); /* Effet de transparence moderne */
+    backdrop-filter: blur(10px); /* Flou derrière le formulaire */
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+}
+
+/* Titre du formulaire */
+legend {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Style des labels (les questions) */
+label {
+    display: block;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* Style des champs de saisie (inputs) */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    color: #1e293b;
+    box-sizing: border-box; /* Pour que le padding ne dépasse pas */
+    transition: all 0.3s ease;
+}
+
+/* Effet quand on clique dans un champ */
+input:focus {
+    outline: none;
+    border-color: #ef4444; /* Change en rouge au clic */
+    box-shadow: 0 0 8px rgba(239, 68, 68, 0.4);
+}
+
+/* Conteneur des boutons */
+.button-container {
+    margin-top: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Bouton SE CONNECTER (Rouge) */
+button.connect {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 2;
+    transition: background 0.3s;
+}
+
+button.connect:hover {
+    background-color: #dc2626;
+}
+
+/* Bouton ANNULER (Gris/Bleu foncé) */
+button.cancel {
+    background-color: #475569;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+}
+
+button.cancel:hover {
+    background-color: #334155;
+}
