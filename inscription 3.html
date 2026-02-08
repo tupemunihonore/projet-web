@@ -1,0 +1,108 @@
+[15:56, 13/01/2026] Benji: <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Gestion des Homes UNIKIN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --unikin-blue: #004a99; /* Bleu institutionnel */
+        }
+        .btn-primary { background-color: var(--unikin-blue); border: none; }
+        .form-label { font-weight: bold; }
+        .header-inscription { background-color: #f8f9fa; padding: 20px 0; border-bottom: 3px solid var(--unikin-blue); }
+    </style>
+    
+    <link rel="stylesheet" href="inscription.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">UNIKIN - LOGEMENT</a>
+        </div>
+    </nav>
+
+    <header class="header-inscription text-center mb-5">
+        <div class="container">
+            <h1>Demande de Logement Étudiant</h1>
+            <p class="lead">Remplissez le formulaire ci-dessous pour postuler à une chambre.</p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <form id="formInscription">
+                            <h5 class="mb-4 text-primary">1. Informations Personnelles</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="nom" class="form-label">Nom complet</label>
+                                    <input type="text" class="form-control" id="nom" placeholder="Ex: bokulu buenga benjamin" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="matricule" class="form-label">Numéro Matricule</label>
+                                    <input type="text" class="form-control" id="matricule" placeholder="12-ABC-345" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="faculte" class="form-label">Faculté</label>
+                                    <select class="form-select" id="faculte" required>
+                                        <option value="">Choisir...</option>
+                                        <option>Sciences</option>
+                                        <option>Médecine</option>
+                                        <option>Droit</option>
+                                        <option>Polytechnique</option>
+                                        <option>Économie</option>
+                                        <option>lettres</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label d-block">Genre</label>
+                                    <div class="form-check form-check-inline mt-2">
+                                        <input class="form-check-input" type="radio" name="genre" id="m" value="M">
+                                        <label class="form-check-label" for="m">Masculin</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="genre" id="f" value="F">
+                                        <label class="form-check-label" for="f">Féminin</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <h5 class="mb-4 text-primary">2. Choix du Logement</h5>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-12">
+                                    <label for="home" class="form-label">Home souhaité</label>
+                                    <select class="form-select" id="home" required>
+                                        <option value="">Sélectionnez un home...</option>
+                                        <option>Home 1 (Garçons)</option>
+                                        <option>Home 10 (Garçons)</option>
+                                        <option>Home 150 (filles)</option>
+                                        <option>Home 180 (filles)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary btn-lg">Soumettre ma candidature</button>
+                                <button type="reset" class="btn btn-outline-secondary">Effacer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 bg-light">
+        <p>&copy; 2024 UNIKIN - Projet Web - Groupe Benjamin & Co</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
