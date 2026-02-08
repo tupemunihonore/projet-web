@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Détails Chambres - UNIKIN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="chambre.css">
+</head>
+<body class="bg-gray-100 p-4 md:p-10">
+    <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
+        <div class="bg-blue-900 p-6 text-white">
+            <h2 class="text-2xl font-bold text-center text-blue-900 mb-6">Détails des Chambres - Home 150</h2>
+            <p class="text-blue-200">Sélectionnez une chambre disponible pour continuer votre réservation.</p>
+        </div>
+
+        <div class="p-6">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-200 text-gray-700 uppercase text-sm">
+                            <th class="p-4 border">N° Chambre</th>
+                            <th class="p-4 border">Type de Chambre</th>
+                            <th class="p-4 border">Équipements inclus</th>
+                            <th class="p-4 border text-center">État / Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-600">
+                        <tr class="hover:bg-blue-50 transition">
+                            <td class="p-4 border font-bold">A-01</td>
+                            <td class="p-4 border">Individuelle (Solo)</td>
+                            <td class="p-4 border">
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Lit</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Table d'étude</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Placard</span>
+                            </td>
+                            <td class="p-4 border text-center">
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition">
+                                    Choisir cette chambre
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-blue-50 transition bg-gray-50">
+                            <td class="p-4 border font-bold">A-02</td>
+                            <td class="p-4 border">Collective (2 lits)</td>
+                            <td class="p-4 border">
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">2 Lits</span>
+                                <span class="text-xs bg-gray-100 px-2 py-1 rounded">2 Chaises</span>
+                            </td>
+                            <td class="p-4 border text-center">
+                                <button class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full text-sm font-semibold transition">
+                                    Choisir cette chambre
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="bg-red-50 opacity-60">
+                            <td class="p-4 border font-bold text-red-800">B-05</td>
+                            <td class="p-4 border">Individuelle</td>
+                            <td class="p-4 border">Lit, Armoire</td>
+                            <td class="p-4 border text-center font-bold text-red-600 italic">
+                                Déjà occupée
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-6 flex justify-between items-center">
+                <a href="#" class="text-blue-900 font-bold">&larr; Retour à la liste des homes</a>
+                <p class="text-sm text-gray-500 italic">* Les équipements sont la propriété de l'Université.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
