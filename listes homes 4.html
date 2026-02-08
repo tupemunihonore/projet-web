@@ -1,0 +1,97 @@
+[16:38, 13/01/2026] Benji: <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Homes - UNIKIN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .home-card img { height: 200px; object-fit: cover; }
+        .badge-dispo { position: absolute; top: 10px; right: 10px; }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="listes homes.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">UNIKIN - LOGEMENT</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Découvrez les Homes de l'UNIKIN</h2>
+        <p class="text-muted text-center mb-5">Sélectionnez un home pour voir les détails et les places disponibles.</p>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card home-card h-100 shadow-sm">
+                    <span class="badge bg-success badge-dispo">Disponible</span>
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Home 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Home 1 (garcons)</h5>
+                        <p class="card-text text-muted">Réservé aux étudiants de premier cycle. Situé près du plateau des professeurs.</p>
+                        <ul class="list-unstyled small">
+                            <li><strong>Capacité:</strong> 400 places</li>
+                            <li><strong>Type:</strong> Masculin</li>
+                        </ul>
+                        <a href="details_chambres.html" class="btn btn-outline-primary w-100">Voir les chambres</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card home-card h-100 shadow-sm">
+                    <span class="badge bg-danger badge-dispo">Complet</span>
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Home 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Home 10 (garcons)</h5>
+                        <p class="card-text text-muted">Home moderne réservé aux étudiantes. Sécurité renforcée et calme assuré.</p>
+                        <ul class="list-unstyled small">
+                            <li><strong>Capacité:</strong> 250 places</li>
+                            <li><strong>Type:</strong> Féminin</li>
+                        </ul>
+                        <a href="details_chambres.html" class="btn btn-outline-primary w-100">Voir les chambres</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card home-card h-100 shadow-sm">
+                    <span class="badge bg-danger badge-dispo">Complet</span>
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Home 10">
+                    <div class="card-body">
+                        <h5 class="card-title">Home 150 (filles)</h5>
+                        <p class="card-text text-muted">Home moderne réservé aux étudiantes. Sécurité renforcée et calme assuré.</p>
+                        <ul class="list-unstyled small">
+                            <li><strong>Capacité:</strong> 500 places</li>
+                            <li><strong>Type:</strong> Féminin</li>
+                        </ul>
+                        <a href="details_chambres.html" class="btn btn-outline-primary w-100">Voir les chambres</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card home-card h-100 shadow-sm">
+                    <span class="badge bg-warning text-dark badge-dispo">Peu de places</span>
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Home 150">
+                    <div class="card-body">
+                        <h5 class="card-title">Home 180 (filles)</h5>
+                        <p class="card-text text-muted">Situé en hauteur, offre un cadre idéal pour la recherche et le repos.</p>
+                        <ul class="list-unstyled small">
+                            <li><strong>Capacité:</strong> 300 places</li>
+                            <li><strong>Type:</strong> Mixte (Ailes séparées)</li>
+                        </ul>
+                        <a href="details_chambres.html" class="btn btn-outline-primary w-100">Voir les chambres</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 mt-5 bg-light border-top">
+    </footer>
+
+</body>
+</html>
