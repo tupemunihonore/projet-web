@@ -1,0 +1,57 @@
+/* Importation d'une police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    /* Dégradé bleu professionnel */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background-attachment: fixed;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05); /* Effet verre (Glassmorphism) */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
+
+p {
+    color: #cbd5e0;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
