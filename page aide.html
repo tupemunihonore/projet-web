@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre d'Aide - UNIKIN</title>
+    <link href="https://cdn.npmmirror.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        :root { --primary-blue: #007bff; --card-bg: #161b22; }
+        body { background: #0a0e14; color: #e6edf3; font-family: 'Poppins', sans-serif; }
+        .help-card { background: var(--card-bg); border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s; cursor: pointer; }
+        .help-card:hover { transform: translateY(-10px); border-color: var(--primary-blue); }
+        .icon-box { font-size: 2rem; color: var(--primary-blue); margin-bottom: 15px; }
+        .faq-q { color: var(--primary-blue); font-weight: 500; margin-top: 20px; }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold">Comment pouvons-nous vous <span class="text-primary">aider ?</span></h1>
+        <p class="text-muted">Trouvez des réponses rapides ou contactez le service administratif.</p>
+    </div>
+
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="help-card p-4 text-center">
+                <div class="icon-box"><i class="bi bi-key"></i></div>
+                <h5>Accès & Clés</h5>
+                <p class="small text-muted">Procédures en cas de perte de clés ou problème de serrure.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="help-card p-4 text-center">
+                <div class="icon-box"><i class="bi bi-credit-card"></i></div>
+                <h5>Paiements</h5>
+                <p class="small text-muted">Aide sur les frais de logement et preuves de paiement.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="help-card p-4 text-center">
+                <div class="icon-box"><i class="bi bi-tools"></i></div>
+                <h5>Maintenance</h5>
+                <p class="small text-muted">Signaler une panne électrique ou une fuite d'eau.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-width-700 mx-auto bg-dark p-4 rounded-4">
+        <h3 class="mb-4 text-center">Questions Fréquentes</h3>
+        
+        <div class="faq-item">
+            <p class="faq-q">Puis-je changer de chambre en cours d'année ?</p>
+            <p class="text-muted small">Oui, mais sous réserve de disponibilité et après validation par le service de l'intendance.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Que faire si j'ai oublié mon mot de passe étudiant ?</p>
+            <p class="text-muted small">Rendez-vous à la direction informatique avec votre carte d'étudiant pour une réinitialisation.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Le Wi-Fi est-il disponible dans les homes ?</p>
+            <p class="text-muted small">Certains sites sont couverts. Le déploiement complet est en cours par le rectorat.</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <p>Besoin d'une assistance directe ?</p>
+        <a href="mailto:support@unikin.ac.cd" class="btn btn-primary">Envoyer un message</a>
+    </div>
+</div>
+
+</body>
+</html>
