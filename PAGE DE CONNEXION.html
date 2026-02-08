@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="corps">
+      <form action="traitement.php" method="post">
+        <fieldset>
+            <legend class="sommet">CONNEXION</legend>
+            <p>
+                <label for="PRENOM">Inscrivez votre prenom</label>
+                <input type="text" placeholder="ELIE" autofocus required >
+            </p>
+            <p>
+                <label for="NOM">Inscrivez votre nom</label>
+                <input type="text" placeholder="MUJINGA" autofocus required>
+            </p>
+            <p>
+                <label for="POST-NOM">Inscrivez votre post-nom</label>
+                <input type="text" placeholder="KASONGO" autofocus required>
+            </p>
+            <p>
+                <label for="NUMERO DE CHAMBRE">Inscrivez votre identifiant</label>
+                <input type="text" placeholder="145-234-972" autofocus required>
+            </p>
+            <P>
+                <label for="MOT DE PASSE">Inserez votre mot de passe </label>
+                <input type="password" autofocus required>
+            </P>
+            <p>
+                <label for="DATE D'INSCRIPTION" class="inscription">Inserez votre date d'inscription</label>
+                <input type="date" autofocus required>
+            </p>
+            <p class="confirmation">
+                <input type="submit" value="SE CONNECTER">
+                 <input type="reset" value="ANNULER">
+            </p>
+        </fieldset>
+      </form>
+    </div>
+</body>
+</html>
