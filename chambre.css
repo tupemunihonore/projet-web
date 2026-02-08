@@ -1,0 +1,83 @@
+<style>
+    :root {
+        --bg-gray: #e5e7eb;    /* Arrière-plan gris propre */
+        --card-white: #ffffff;
+        --unikin-blue: #0f172a; /* Bleu très sombre pour le texte important */
+        --accent-gold: #d97706; /* Or pour les détails */
+        --soft-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+
+    body {
+        background-color: var(--bg-gray);
+        font-family: 'Inter', -apple-system, sans-serif;
+        color: #374151;
+        margin: 0;
+        padding: 40px 20px;
+    }
+
+    /* Cartes Ultra-Propres */
+    .clean-card {
+        background: var(--card-white);
+        border-radius: 30px;
+        box-shadow: var(--soft-shadow);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 40px;
+    }
+
+    /* Titres percutants */
+    .title-display {
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: var(--unikin-blue);
+        letter-spacing: -0.05em;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Bouton au design minimaliste */
+    .btn-minimal {
+        background: var(--unikin-blue);
+        color: white;
+        padding: 14px 28px;
+        border-radius: 16px;
+        font-weight: 600;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-minimal:hover {
+        transform: scale(1.02);
+        box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2);
+    }
+
+    /* Inputs avec fond gris subtil */
+    .input-clean {
+        background: #f3f4f6;
+        border: 2px solid transparent;
+        border-radius: 18px;
+        padding: 16px;
+        width: 100%;
+        transition: all 0.3s;
+    }
+
+    .input-clean:focus {
+        background: white;
+        border-color: var(--unikin-blue);
+        outline: none;
+    }
+
+    /* Tableaux aérés */
+    .modern-table th {
+        text-align: left;
+        padding: 20px;
+        color: #9ca3af;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .modern-table td {
+        padding: 25px 20px;
+        border-bottom: 1px solid #f3f4f6;
+    }
+</style>
