@@ -1,0 +1,67 @@
+:root {
+    --primary: #1e3a8a;    /* Bleu Nuit Royal */
+    --accent: #f59e0b;     /* Or UNIKIN */
+    --success: #10b981;    /* Vert Émeraude */
+    --bg-body: #f1f5f9;    /* Gris bleuté très clair */
+    --white: #ffffff;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    background-color: var(--bg-body);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+}
+
+/* Conteneur de carte effet "Verre" ou "Premium" */
+.glass-card {
+    background: var(--white);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: var(--shadow);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des boutons avec dégradé */
+.btn-unikin {
+    background: linear-gradient(135deg, var(--primary) 0%, #3b82f6 100%);
+    color: white;
+    font-weight: 700;
+    padding: 0.8rem 1.5rem;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.2);
+}
+
+.btn-unikin:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 6px 15px rgba(30, 58, 138, 0.3);
+}
+
+/* Status Badges */
+.status-pill {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.status-available { background-color: #d1fae5; color: #065f46; }
+.status-busy { background-color: #fee2e2; color: #991b1b; }
+
+/* Tableaux Modernes */
+table { width: 100%; border-spacing: 0 0.5rem; border-collapse: separate; }
+th { color: #64748b; font-size: 0.8rem; text-transform: uppercase; padding: 1rem; }
+td { background: white; padding: 1.25rem 1rem; }
+td:first-child { border-radius: 16px 0 0 16px; }
+td:last-child { border-radius: 0 16px 16px 0; }
