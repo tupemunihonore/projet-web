@@ -1,0 +1,37 @@
+:root {
+    --bg-black: #050505;
+    --card-gray: #111111;
+    --electric-blue: #00d2ff;
+    --deep-blue: #004e92;
+    --text-silver: #b0b0b0;
+    --neon-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+}
+
+body {
+    background-color: var(--bg-black);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.02rem;
+}
+
+/* Effet de carte Neo-Glace */
+.neo-card {
+    background: var(--card-gray);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    transition: all 0.4s ease;
+}
+
+.neo-card:hover {
+    border-color: var(--electric-blue);
+    box-shadow: var(--neon-shadow);
+    transform: translateY(-5px);
+}
+
+/* Titres avec dégradé */
+.gradient-text {
+    background: linear-gradient(to right, #ffffff, var(--electric-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
